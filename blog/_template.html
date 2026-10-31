@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>[Post title] · Emir Ulurak</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="[One-sentence summary of the post.]">
+<meta name="author" content="Emir Ulurak">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../style.css">
+<meta name="robots" content="noindex">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="site-head">
+<a class="brand" href="../index.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2.8 20 7.3v9.4L12 21.2l-8-4.5V7.3Z"/><path d="M4 7.3 12 12l8-4.7M12 12v9.2"/></svg><span>Emir Ulurak</span></a>
+<nav class="site-nav" aria-label="Main"><a href="../publications/index.html">Publications</a><a href="../blog/index.html" aria-current="page">Blog</a><a href="../cv/index.html">CV</a></nav>
+</header>
+<main id="main">
+
+<!--
+  POST TEMPLATE. Copy this file to blog/<short-slug>.html, then:
+  1. Replace every [bracketed] placeholder, including <title> and the description meta.
+  2. Set the <time datetime="YYYY-MM-DD"> value and the visible date.
+  3. Delete the dashed placeholder note and any example blocks you do not need.
+  4. Add an entry for the post to blog/index.html.
+  The reading time is computed automatically from the text.
+-->
+<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Blog</a> / [Short title]</nav>
+<article>
+<header class="post-head">
+<h1>[Post title]</h1>
+<p class="post-meta"><time datetime="2026-01-01">[1 January 2026]</time><span data-reading-time>[n] min read</span></p>
+</header>
+
+<div class="post">
+<p class="placeholder-note">PLACEHOLDER: this page is a template and is not linked from the site. Everything below shows the available styles; replace it with the post.</p>
+
+<p>[Opening paragraph. State the question or observation in two or three sentences.]</p>
+
+<h2>[Section heading]</h2>
+<p>[Body text with an <a href="index.html">inline link</a>, some <em>emphasis</em>, a short <code>inline_code()</code> span, and a math-like expression such as <span class="math">&Delta;v &prop; f&thinsp;&Delta;Y / Z</span>.]<sup class="fn-ref" id="fnref1"><a href="#fn1">1</a></sup></p>
+
+<h3>[Subsection heading]</h3>
+<ul>
+<li>[List item]</li>
+<li>[List item]</li>
+</ul>
+
+<pre><code># [code block placeholder]
+def example(x):
+    return x</code></pre>
+
+<blockquote><p>[A quoted passage, with its source in the text that follows.]</p></blockquote>
+
+<figure class="fig">
+<img src="../images/projects/monomip/multiheight.jpg" width="1103" height="745" loading="lazy" alt="[Describe the figure]">
+<figcaption><b>Fig. 1</b>[Figure caption. Replace the image path with one from images/blog/.]</figcaption>
+</figure>
+
+<p>[Closing paragraph.]<sup class="fn-ref" id="fnref2"><a href="#fn2">2</a></sup></p>
+
+<section class="footnotes" aria-label="Footnotes">
+<ol>
+<li id="fn1">[Footnote text.] <a class="back" href="#fnref1" aria-label="Back to text">&#8617;</a></li>
+<li id="fn2">[Footnote text.] <a class="back" href="#fnref2" aria-label="Back to text">&#8617;</a></li>
+</ol>
+</section>
+</div>
+</article>
+</main>
+<footer class="site-foot">
+<span>&copy; 2026 Emir Ulurak &middot; Last updated October 2026</span>
+<nav aria-label="Elsewhere"><a href="https://scholar.google.com/citations?user=AMzj9P8AAAAJ" rel="me noopener">Scholar</a><a href="https://github.com/imemmul" rel="me noopener">GitHub</a><a href="https://www.linkedin.com/in/emir-ulurak-141901272" rel="me noopener">LinkedIn</a></nav>
+</footer>
+</div>
+<script>
+// Fills in the reading-time line from the article's word count (~220 words per minute).
+(function () {
+  var el = document.querySelector('[data-reading-time]'), post = document.querySelector('.post');
+  if (!el || !post) return;
+  var words = (post.innerText || '').trim().split(/\s+/).length;
+  el.textContent = Math.max(1, Math.round(words / 220)) + ' min read';
+})();
+</script>
+</body>
+</html>
