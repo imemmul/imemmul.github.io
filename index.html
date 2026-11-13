@@ -62,7 +62,7 @@
 <span class="label">2026 &middot; ongoing</span>
 <div>
 <h3 class="pub-title">Joint Uncertainty for Feed-Forward 3D Reconstruction</h3>
-<p class="summary">Feed-forward reconstruction models such as VGGT and Pi3 give a confidence value for each point separately. Across five models and three datasets (ScanNet++, ARKitScenes, Waymo), I found that their errors are strongly correlated between nearby points, so pointwise confidence misjudges the uncertainty of measurements that involve several points. I am developing a model of these joint errors.</p>
+<p class="summary">Feed-forward reconstruction models such as VGGT and Pi3 give a confidence value for each point separately. Across five models and three datasets (ScanNet++, ARKitScenes, Waymo), I found that this per-point confidence fails for measurements that involve several points, in opposite directions. It is too wide for short distances and several times too narrow for quantities aggregated over a view, and no single rescaling corrects both. I am developing a learned model of the joint errors, and first experiments give better uncertainty estimates for angles and groups of points than a per-point baseline.</p>
 <p class="tags">3D reconstruction &middot; uncertainty &middot; VGGT &middot; Pi3</p>
 </div>
 </li>
